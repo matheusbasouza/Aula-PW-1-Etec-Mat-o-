@@ -51,6 +51,6 @@ function Teste1 (h, ca,co){
     }
 }
 
-console.log("Teste 1: "  +Teste1  (0,20,21));
+console.log("Teste 1: "  +Teste1 (0,20,21));
 console.log("Teste 2: "  +Teste1 (13,0,5));
 console.log("Teste 3: "  +Teste1 (10,6,0));
