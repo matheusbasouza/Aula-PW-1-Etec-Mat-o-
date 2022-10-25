@@ -39,7 +39,7 @@ function calculaCa(co, h){
 function calculaCo(h, ca){
     return (Math.sqrt((Math.pow(ca, 2)-Math.pow(h, 2))));
 }
-function Teste1 (h, ca,co){
+function calculaPitagoras(h, ca,co){
     if (h==0){
         return calculaH (ca,co);
     }
@@ -51,6 +51,11 @@ function Teste1 (h, ca,co){
     }
 }
 
-console.log("Teste 1: "  +Teste1 (0,20,21));
-console.log("Teste 2: "  +Teste1 (13,0,5));
-console.log("Teste 3: "  +Teste1 (10,6,0));
+function abastecePitagoras(){
+    let h = document.getElementById("h").value;
+    let ca = document.getElementById("ca").value;
+    let co = document.getElementById("co").value;
+
+    console.log(calculaPitagoras(h, ca, co));
+    document.getElementById("resultado").innerHTML=calculaPitagoras(h, ca, co);
+}
